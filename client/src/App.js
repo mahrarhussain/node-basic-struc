@@ -11,7 +11,7 @@ function App() {
     event.preventDefault(); // Prevents default form submission
 
     try {
-      const response = await axios.post("https://your-api-url.com", {
+      const response = await axios.post("http://localhost:8080/api/user/", {
         name,
         email,
       });
